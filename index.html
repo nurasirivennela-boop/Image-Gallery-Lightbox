@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Responsive Image Gallery with Lightbox effect">
+
+    <title>Image Gallery | Lightbox</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+    <p class="eyebrow">B.Y.T.E. AVIP 2026 • TASK 2</p>
+
+    <h1>🖼️ Image Gallery</h1>
+
+    <p>Click any image to open the lightbox.</p>
+</header>
+
+
+<main class="gallery">
+
+    <figure class="gallery-item">
+        <button class="image-button" data-index="0">
+            <img
+                src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1000&q=80"
+                alt="Mountain landscape at sunrise">
+        </button>
+
+        <figcaption>Mountain Morning</figcaption>
+    </figure>
+
+
+    <figure class="gallery-item">
+        <button class="image-button" data-index="1">
+            <img
+                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80"
+                alt="Ocean and beach">
+        </button>
+
+        <figcaption>Ocean Escape</figcaption>
+    </figure>
+
+
+    <figure class="gallery-item">
+        <button class="image-button" data-index="2">
+            <img
+                src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1000&q=80"
+                alt="City skyline">
+        </button>
+
+        <figcaption>City Lights</figcaption>
+    </figure>
+
+
+    <figure class="gallery-item">
+        <button class="image-button" data-index="3">
+            <img
+                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1000&q=80"
+                alt="Green forest">
+        </button>
+
+        <figcaption>Forest Trail</figcaption>
+    </figure>
+
+
+    <figure class="gallery-item">
+        <button class="image-button" data-index="4">
+            <img
+                src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1000&q=80"
+                alt="Desert landscape">
+        </button>
+
+        <figcaption>Desert Sunset</figcaption>
+    </figure>
+
+
+    <figure class="gallery-item">
+        <button class="image-button" data-index="5">
+            <img
+                src="https://images.unsplash.com/photo-1439853949127-fa647821eba0?auto=format&fit=crop&w=1000&q=80"
+                alt="Peaceful lake">
+        </button>
+
+        <figcaption>Peaceful Lake</figcaption>
+    </figure>
+
+</main>
+
+
+<!-- LIGHTBOX -->
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+
+    <button
+        class="close-btn"
+        id="closeBtn"
+        aria-label="Close">
+        &times;
+    </button>
+
+
+    <button
+        class="nav-btn prev-btn"
+        id="prevBtn"
+        aria-label="Previous image">
+        &#10094;
+    </button>
+
+
+    <div class="lightbox-content">
+
+        <img
+            id="lightboxImage"
+            src=""
+            alt="">
+
+        <p id="caption"></p>
+
+        <p id="counter"></p>
+
+    </div>
+
+
+    <button
+        class="nav-btn next-btn"
+        id="nextBtn"
+        aria-label="Next image">
+        &#10095;
+    </button>
+
+</div>
+
+
+<footer>
+    Built with HTML, CSS &amp; JavaScript
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
